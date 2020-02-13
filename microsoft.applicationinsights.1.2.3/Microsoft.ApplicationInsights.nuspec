@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.8.50313">
+    <id>Microsoft.ApplicationInsights</id>
+    <version>1.2.3</version>
+    <title>Application Insights API</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkID=510709</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkID=510710</projectUrl>
+    <iconUrl>http://appanacdn.blob.core.windows.net/cdn/icons/aic.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Application Insights Core API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience.</description>
+    <releaseNotes>For the release notes please follow http://go.microsoft.com/fwlink/?LinkId=535037</releaseNotes>
+    <copyright>Copyright c Microsoft. All Rights Reserved.</copyright>
+    <tags>Analytics ApplicationInsights Telemetry AppInsights</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Diagnostics.Tracing.EventSource.Redist" version="1.1.24" />
+      </group>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework="WindowsPhone8.0">
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
